@@ -1,0 +1,27 @@
+.container {
+	padding-bottom: 50px;
+	position: relative;
+}
+.backOval {
+	position: absolute;
+	left: -3rem;
+	top: 2rem;
+	width: 600px;
+	height: 600px;
+}
+.backOval img {
+	z-index: 900;
+}
+.serviceList {
+	justify-content: space-between;
+	margin-top: 3rem;
+	z-index: 1000;
+}
+.servicesDes {
+	width: 80%;
+	text-align: center;
+	margin: auto;
+	margin-top: 30px;
+	line-height: 1.6rem;
+	font-weight: 300;
+}

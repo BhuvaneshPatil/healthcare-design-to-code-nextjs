@@ -1,0 +1,58 @@
+.cardContainer {
+	align-self: stretch;
+	background-color: #ffffff;
+	box-shadow: 10px 40px 50px 0px #e5e9f666;
+
+	max-width: 31%;
+	margin-bottom: 30px;
+	padding: 40px 30px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	transition: all 0.2s ease;
+}
+.cardContainer:hover {
+	box-shadow: 10px 40px 50px 0px #e5e9f6d8;
+}
+.cardContainer:hover .imageContainer {
+	animation: grow 0.3s forwards;
+}
+.cardContainer:hover .imageContainer div {
+	animation: shake 0.3s 0.3s 3 ease;
+}
+.imageContainer {
+	display: flex;
+	align-items: center;
+	height: 100px;
+	padding-bottom: 20px;
+}
+@keyframes shake {
+	30% {
+		transform: rotate(-10deg);
+	}
+	50% {
+		transform: rotate(10deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+@keyframes grow {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(1.2);
+	}
+}
+.cardHeading {
+	font-weight: 700;
+	margin: 15px 0;
+}
+.cardDes {
+	font-size: 1rem;
+	font-weight: 300;
+	max-width: 90%;
+	line-height: 1.8rem;
+}

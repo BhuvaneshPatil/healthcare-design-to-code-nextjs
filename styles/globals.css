@@ -13,6 +13,8 @@ body,
 	margin: 0;
 	box-sizing: border-box;
 	font-family: "Mulish", sans-serif;
+}
+body {
 	background-color: #e5e5e5;
 }
 /* Margin to left on both side */
@@ -26,6 +28,7 @@ body,
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	flex-wrap: wrap;
 }
 .text-dark-gray {
 	color: var(--dark-gray);
@@ -41,4 +44,7 @@ body,
 }
 .blue-background {
 	background-color: var(--blue);
+}
+.center {
+	justify-content: center;
 }

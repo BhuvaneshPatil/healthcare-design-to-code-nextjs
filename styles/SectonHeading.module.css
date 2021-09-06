@@ -1,0 +1,17 @@
+.headingContainer {
+	padding: 30px 0;
+	position: relative;
+}
+.headingContainer:before {
+	content: "";
+	height: 2px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+	background-color: black;
+	width: 35%;
+}
+.heading {
+	font-size: 2rem;
+}

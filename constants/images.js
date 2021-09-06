@@ -6,6 +6,7 @@ const heroImage = require("../assets/images/hero.svg");
 
 // dot pattern
 const dots = require("../assets/images/dot-pat.svg");
+const backOval = require("../assets/images/back-oval.svg");
 
 // services image
 const searchDoctor = require("../assets/images/search-doc.svg");
@@ -31,6 +32,7 @@ export default {
 	logo,
 	heroImage,
 	dots,
+	backOval,
 	searchDoctor,
 	onlinePharamacy,
 	consultation,
