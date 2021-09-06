@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700&display=swap");
 :root {
-	--blue: var(#458ff6);
-	--black: var(#000000);
-	--dark-gray: var(#1f1534);
-	--light-gray: var(#7d7987);
+	--blue: #458ff6;
+	--black: #000000;
+	--dark-gray: #1f1534;
+	--light-gray: #7d7987;
 }
 
 html,
@@ -13,4 +13,32 @@ body,
 	margin: 0;
 	box-sizing: border-box;
 	font-family: "Mulish", sans-serif;
+	background-color: #e5e5e5;
+}
+/* Margin to left on both side */
+.margin-on-side {
+	margin: 0 8%;
+}
+.name {
+	font-size: 2rem;
+}
+.row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.text-dark-gray {
+	color: var(--dark-gray);
+}
+.text-light-gray {
+	color: var(--light-gray);
+}
+.text-white {
+	color: #fff;
+}
+.text-blue {
+	color: var(--blue);
+}
+.blue-background {
+	background-color: var(--blue);
 }

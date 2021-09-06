@@ -1,0 +1,30 @@
+.backCheck {
+	background-color: blue;
+}
+.navContainer {
+	padding: 2rem 0;
+	justify-content: space-between;
+}
+.navLinks {
+	list-style: none;
+}
+.navLink {
+	margin-left: 2.5rem;
+	font-size: 1.1rem;
+	text-decoration: none;
+	opacity: 60%;
+}
+.navLink:hover {
+	opacity: 0.9;
+}
+.navLink:active {
+	opacity: 1;
+}
+.activeNavLink {
+	opacity: 100%;
+	font-weight: 700;
+}
+.navLink a {
+	text-decoration: none;
+	color: inherit;
+}

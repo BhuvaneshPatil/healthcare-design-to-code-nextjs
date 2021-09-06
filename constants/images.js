@@ -1,15 +1,18 @@
 // logo
-const logo = require("../assets/images/loho.png");
+const logo = require("../assets/images/logo.png");
 
 // hero image
 const heroImage = require("../assets/images/hero.svg");
+
+// dot pattern
+const dots = require("../assets/images/dot-pat.svg");
 
 // services image
 const searchDoctor = require("../assets/images/search-doc.svg");
 const onlinePharamacy = require("../assets/images/on-pharma.svg");
 const consultation = require("../assets/images/consult.svg");
 const detailsInfo = require("../assets/images/details-info.svg");
-const emergancyCare = require("../assets/images/emergancy-care.svg");
+const emergancyCare = require("../assets/images/eme-care.svg");
 const tracking = require("../assets/images/tracking.svg");
 
 // advantages
@@ -25,7 +28,9 @@ const article2 = require("../assets/images/article-2.png");
 const article3 = require("../assets/images/article-3.png");
 
 export default {
+	logo,
 	heroImage,
+	dots,
 	searchDoctor,
 	onlinePharamacy,
 	consultation,

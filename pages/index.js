@@ -1,7 +1,16 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import Hero from "../components/Hero";
+import Navbar from "../components/Navbar";
 
-export default function Home() {
-	return <div className={styles.container}>Hello</div>;
+export default function Home(props) {
+	return (
+		<div>
+			<Navbar />
+			<Hero />
+		</div>
+	);
+}
+export async function getServerSideProps() {
+	return {
+		props: {}, // will be passed to the page component as props
+	};
 }
