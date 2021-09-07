@@ -1,0 +1,39 @@
+.testimonialContainer {
+	background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+	padding: 1.5rem 5rem;
+	border-radius: 0.8rem;
+}
+.testimonial {
+	padding: 3rem 2rem;
+}
+.avatar div {
+	border: 4px white solid;
+	border-radius: 50%;
+}
+.avatar img {
+	height: 125px;
+	width: 125px;
+	border-radius: 50%;
+}
+.testimonialText {
+	width: 40%;
+	justify-self: flex-end;
+	text-align: justify;
+	color: #fff;
+	opacity: 0.9;
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+.userInfoUnit {
+	margin-left: 2rem;
+	color: #fff;
+}
+.userInfoUnit h3 {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 1.9rem;
+}
+.userInfoUnit p {
+	font-weight: 300;
+	opacity: 0.85;
+}

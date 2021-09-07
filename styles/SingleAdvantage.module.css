@@ -1,0 +1,31 @@
+.imageContainer {
+	max-width: 50%;
+	padding: 35px;
+}
+.infoContainer {
+	width: 40%;
+	text-align: left;
+}
+.heading {
+	width: 80%;
+	padding-bottom: 30px;
+	font-size: 2rem;
+	font-weight: 700;
+	position: relative;
+}
+.heading:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 20%;
+	height: 2px;
+	background-color: #333;
+}
+.description {
+	font-size: 1rem;
+	font-weight: 300;
+	padding: 30px 0;
+	line-height: 1.8rem;
+	opacity: 0.8;
+}

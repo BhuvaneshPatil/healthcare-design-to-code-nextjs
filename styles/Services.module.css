@@ -1,5 +1,5 @@
 .container {
-	padding-bottom: 50px;
+	padding-bottom: 40px;
 	position: relative;
 }
 .backOval {
@@ -9,13 +9,11 @@
 	width: 600px;
 	height: 600px;
 }
-.backOval img {
-	z-index: 900;
-}
+
 .serviceList {
 	justify-content: space-between;
-	margin-top: 3rem;
-	z-index: 1000;
+	margin-top: 4rem;
+	margin-bottom: 2.7rem;
 }
 .servicesDes {
 	width: 80%;

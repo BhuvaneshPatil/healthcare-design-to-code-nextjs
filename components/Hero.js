@@ -23,7 +23,7 @@ const Hero = () => {
 				</p>
 
 				{/* Button - custom button */}
-				<Button fill="fill" />
+				<Button fill="fill" text={"Consult Today"} />
 			</div>
 
 			{/* right section */}

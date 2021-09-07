@@ -13,13 +13,14 @@
 	transition: all 0.2s ease;
 }
 .cardContainer:hover {
-	box-shadow: 10px 40px 50px 0px #e5e9f6d8;
+	box-shadow: 10px 30px 50px 0px #e5e9f6e8;
+	transform: scale(1.02);
 }
 .cardContainer:hover .imageContainer {
-	animation: grow 0.3s forwards;
+	animation: shake 0.3s ease-in-out 3;
 }
 .cardContainer:hover .imageContainer div {
-	animation: shake 0.3s 0.3s 3 ease;
+	animation: grow 0.3s forwards;
 }
 .imageContainer {
 	display: flex;
@@ -32,10 +33,10 @@
 		transform: rotate(-10deg);
 	}
 	50% {
-		transform: rotate(10deg);
+		transform-origin: center center;
 	}
 	100% {
-		transform: rotate(0deg);
+		transform: rotate(10deg);
 	}
 }
 @keyframes grow {
@@ -43,7 +44,7 @@
 		transform: scale(1);
 	}
 	100% {
-		transform: scale(1.2);
+		transform: scale(1.05);
 	}
 }
 .cardHeading {

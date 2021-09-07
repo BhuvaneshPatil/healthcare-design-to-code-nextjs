@@ -1,0 +1,42 @@
+.cardContainer {
+	align-self: stretch;
+	background-color: #ffffff;
+	box-shadow: 4px 15px 20px 11px #e5e9f666;
+	max-width: 30%;
+	margin-bottom: 30px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	overflow: hidden;
+}
+.imageContainer img {
+	transition: all 0.3s ease;
+	width: 100%;
+}
+.cardContainer:hover .imageContainer img {
+	transform: scale(1.1);
+}
+.infoContainer {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 25px;
+}
+.articleHeading {
+	font-weight: 700;
+	line-height: 2rem;
+}
+.articleText {
+	margin: 15px 0;
+	font-size: 0.9rem;
+	font-weight: 300;
+	line-height: 1.5rem;
+}
+.infoContainer a {
+	text-decoration: none;
+	color: #4089ed;
+	margin-top: auto;
+	justify-self: flex-end;
+}

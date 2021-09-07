@@ -2,14 +2,15 @@
 	padding: 30px 0;
 	position: relative;
 }
-.headingContainer:before {
+.headingContainer:after {
 	content: "";
 	height: 2px;
 	position: absolute;
 	bottom: 0;
 	left: 50%;
 	transform: translate(-50%);
-	background-color: black;
+	border-color: black;
+	border-top: 2px solid;
 	width: 35%;
 }
 .heading {

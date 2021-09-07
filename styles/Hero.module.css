@@ -1,4 +1,5 @@
 .heroContainer {
+	margin-top: 2rem;
 	padding-bottom: 50px;
 	justify-content: space-between;
 }
@@ -9,7 +10,7 @@
 	font-size: 3rem;
 }
 .heroDes {
-	margin: 25px 0;
+	margin: 2rem 0;
 	width: 90%;
 	font-size: 1.1rem;
 	font-weight: 300;

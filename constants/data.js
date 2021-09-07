@@ -66,7 +66,7 @@ const data = {
 				"A healthy lifestyle should start from now and also for your skin health. There are some...",
 		},
 	],
-	testimonial: [
+	testimonial: 
 		{
 			id: 1,
 			userImage: images.testinomialAvatar,
@@ -75,22 +75,6 @@ const data = {
 			reviewText:
 				"Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely",
 		},
-		{
-			id: 3,
-			userImage: images.testinomialAvatar,
-			userName: "Edward Newgate",
-			userSubHeading: "Founder Circle",
-			reviewText:
-				"Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely",
-		},
-		{
-			id: 3,
-			userImage: images.testinomialAvatar,
-			userName: "Edward Newgate",
-			userSubHeading: "Founder Circle",
-			reviewText:
-				"Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely",
-		},
-	],
+
 };
 export default data;
