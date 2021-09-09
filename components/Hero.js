@@ -15,8 +15,8 @@ const Hero = () => {
 				</h1>
 				{/* details */}
 				<p className={`${styles.heroDes} text-light-gray`}>
-					Trafalgar provides progressive, and affordable healthcare,
-					accessible on mobile and online for everyone
+					bhjdbvfalgar provides progressive, and affordable
+					healthcare, accessible on mobile and online for everyone
 				</p>
 
 				{/* Button - custom button */}

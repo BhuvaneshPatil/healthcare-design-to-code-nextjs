@@ -1,0 +1,86 @@
+.footerContainer {
+	background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+	margin-top: 5rem;
+	padding: 5rem 0;
+	color: #fff;
+}
+.footerItemsRow {
+	display: flex;
+	width: 100%;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	height: 9rem;
+}
+.companyInfo {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.companyInfo p {
+	font-weight: 300;
+	font-size: 0.9rem;
+	line-height: 1.5rem;
+}
+.companyDes {
+	margin: 1rem 0;
+	width: 75%;
+}
+.logoFooter {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background-color: #fff;
+	color: #5a98f2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+}
+.branding {
+	display: flex;
+	align-items: center;
+}
+.branding h3 {
+	color: inherit;
+	margin-left: 0.8rem;
+}
+.linkGroup {
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	justify-content: space-between;
+}
+.footerLinks {
+	list-style: none;
+}
+.footerLinks li {
+	padding: 5px 0;
+}
+.footerLinks li:last-child {
+	padding: 0;
+}
+.footerLinks li a {
+	text-decoration: none;
+	color: inherit;
+	font-weight: 300;
+	opacity: 0.9;
+}
+@media only screen and (max-width: 600px) {
+	.footerItemsRow {
+		height: auto;
+		max-height: 20rem;
+	}
+	.companyInfo {
+		width: 100%;
+	}
+	.linkGroup {
+		margin-top: 2rem;
+		width: 33%;
+	}
+	.linkGroup h4 {
+		padding-bottom: 20px;
+	}
+}
