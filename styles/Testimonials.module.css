@@ -46,3 +46,27 @@
 .dotContainer div {
 	margin: 0 0.5rem;
 }
+@media screen and (max-width: 640px) {
+	.testimonialContainer {
+		padding: 1rem 1rem;
+	}
+	.testimonial {
+		width: 100%;
+		padding: 1rem 1rem;
+		align-items: center;
+	}
+	.testimonialText {
+		width: 100%;
+		text-align: center;
+	}
+	.userInfoUnit {
+		text-align: center;
+		margin: 1rem 0;
+	}
+	.carouselNavContainer {
+		flex-direction: row;
+	}
+	.dotContainer {
+		flex-direction: row;
+	}
+}

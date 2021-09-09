@@ -14,7 +14,10 @@ body,
 	box-sizing: border-box;
 	font-family: "Mulish", sans-serif;
 }
-
+body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
 /* Margin to left on both side */
 .margin-on-side {
 	margin: 0 8%;
@@ -106,4 +109,9 @@ body,
 .selected {
 	opacity: 1;
 	transform: scale(1.5);
+}
+@media only screen and (max-width: 600px) {
+	.row {
+		flex-direction: column;
+	}
 }

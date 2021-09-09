@@ -7,9 +7,6 @@ const Hero = () => {
 	return (
 		<section className={`${styles.heroContainer} row margin-on-side`}>
 			{/* dot dot pattern */}
-			<div className={`${styles.dotPattern}`}>
-				<Image src={images.dots} alt="Health is Wealth" />
-			</div>
 			{/* left section */}
 			<div className={`${styles.heroInfo}`}>
 				{/* heading */}

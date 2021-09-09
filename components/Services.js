@@ -18,7 +18,7 @@ const Services = ({ services }) => {
 					type of service is suitable for your health
 				</p>
 				{/* Section List - we will map through array and render a card for each item */}
-				<div className={`${styles.serviceList} row`}>
+				<div className={`row ${styles.serviceList}`}>
 					{services.map((item) => {
 						return <ServiceCard service={item} key={item.id} />;
 					})}

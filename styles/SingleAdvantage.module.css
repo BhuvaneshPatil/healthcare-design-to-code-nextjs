@@ -29,3 +29,32 @@
 	line-height: 1.8rem;
 	opacity: 0.8;
 }
+@media screen and (max-width: 600px) {
+	.imageContainer {
+		max-width: 100%;
+
+		padding: 10px;
+	}
+	.infoContainer {
+		width: 100%;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.heading {
+		width: 100%;
+		text-align: center;
+		padding-bottom: 15px;
+	}
+	.description {
+		padding: 15px 0;
+		text-align: center;
+	}
+	.heading:after {
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
+}

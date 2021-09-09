@@ -40,3 +40,8 @@
 	margin-top: auto;
 	justify-self: flex-end;
 }
+@media screen and (max-width: 600px) {
+	.cardContainer {
+		max-width: 100%;
+	}
+}
