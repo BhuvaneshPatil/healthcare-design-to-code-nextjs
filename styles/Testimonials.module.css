@@ -37,3 +37,12 @@
 	font-weight: 300;
 	opacity: 0.85;
 }
+.carouselNavContainer {
+	margin-top: 2rem;
+}
+.dotContainer {
+	margin: 0 1rem;
+}
+.dotContainer div {
+	margin: 0 0.5rem;
+}

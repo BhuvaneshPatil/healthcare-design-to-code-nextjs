@@ -3,7 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import images from "../constants/images";
 import * as styles from "../styles/Navbar.module.css";
+import { HamburgerButton } from "react-hamburger-button";
 const Navbar = () => {
+	const [hidden, setHindden] = React.useState(true);
 	return (
 		<nav>
 			<div className={`${styles.navContainer} margin-on-side row`}>
@@ -29,6 +31,17 @@ const Navbar = () => {
 						<Link href="/">About us</Link>
 					</li>
 				</ul>
+				<HamburgerButton
+					strokeWidth={3}
+					open={!hidden}
+					animationDuration={0.5}
+					onClick={() =>
+						setHindden((current) => {
+							console.log(current);
+							return !current;
+						})
+					}
+				/>
 			</div>
 		</nav>
 	);

@@ -1,20 +1,37 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import * as styles from "../styles/Testimonials.module.css";
 import SectionHeading from "./SectionHeading";
 import Image from "next/image";
 import { useEmblaCarousel } from "embla-carousel/react";
+import { DotButton, NextButton, PrevButton } from "./CarouselButtons";
 const Testimonials = ({ testimonoal }) => {
 	const testimonialArray = Array(3).fill(testimonoal);
 	const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
-	const scrollPrev = useCallback(() => {
-		if (emblaApi) emblaApi.scrollPrev();
+	useEffect(() => {
+		if (!emblaApi) return;
+		emblaApi.on("select", onSlideChange);
 	}, [emblaApi]);
-	const scrollNext = useCallback(() => {
-		if (emblaApi) emblaApi.scrollNext();
+	const [selectedIndex, setselectedIndex] = useState(0);
+	const scrollPrev = useCallback(
+		() => emblaApi && emblaApi.scrollPrev(),
+		[emblaApi]
+	);
+	const scrollNext = useCallback(
+		() => emblaApi && emblaApi.scrollNext(),
+		[emblaApi]
+	);
+	const scrollTo = useCallback(
+		(index) => emblaApi && emblaApi.scrollTo(index),
+		[emblaApi]
+	);
+	const onSlideChange = useCallback(() => {
+		console.log("object");
+		setselectedIndex(emblaApi.selectedScrollSnap);
 	}, [emblaApi]);
-	const renderSingleTestimonial = (item) => {
+
+	const renderSingleTestimonial = (item, key) => {
 		return (
-			<div className={`row embla__slide ${styles.testimonial}`}>
+			<div className={`row embla__slide ${styles.testimonial}`} key={key}>
 				{/* Image */}
 				<div style={{ flex: 1 }} className="row">
 					<div className={styles.avatar}>
@@ -33,7 +50,21 @@ const Testimonials = ({ testimonoal }) => {
 			</div>
 		);
 	};
-
+	const renderDots = () => {
+		return (
+			<div className={`row ${styles.dotContainer}`}>
+				{testimonialArray.map((_, index) => {
+					return (
+						<DotButton
+							key={index}
+							selected={index == selectedIndex}
+							clickHandler={() => scrollTo(index)}
+						/>
+					);
+				})}
+			</div>
+		);
+	};
 	return (
 		<section className={"margin-on-side"} style={{ marginBottom: "4rem" }}>
 			<div className={`${styles.testimonialContainer}`}>
@@ -47,17 +78,17 @@ const Testimonials = ({ testimonoal }) => {
 				<div className="embla" ref={emblaRef}>
 					<div className="embla__container">
 						{testimonialArray.map((item, index) =>
-							renderSingleTestimonial(item)
+							renderSingleTestimonial(item, index)
 						)}
 					</div>
 				</div>
 			</div>
-			<button class="embla__prev" onClick={scrollPrev}>
-				Prev
-			</button>
-			<button class="embla__next" onClick={scrollNext}>
-				Next
-			</button>
+			<div className={`${styles.carouselNavContainer} row center`}>
+				<PrevButton clickHandler={scrollPrev} />
+				{renderDots()}
+
+				<NextButton clickHandler={scrollNext} />
+			</div>
 		</section>
 	);
 };
