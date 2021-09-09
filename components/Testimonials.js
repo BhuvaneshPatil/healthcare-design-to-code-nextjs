@@ -5,13 +5,15 @@ import Image from "next/image";
 import { useEmblaCarousel } from "embla-carousel/react";
 import { DotButton, NextButton, PrevButton } from "./CarouselButtons";
 const Testimonials = ({ testimonoal }) => {
+	const [selectedIndex, setselectedIndex] = useState(0);
 	const testimonialArray = Array(3).fill(testimonoal);
-	const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+	const [emblaRef, emblaApi] = useEmblaCarousel({
+		loop: true,
+	});
 	useEffect(() => {
 		if (!emblaApi) return;
 		emblaApi.on("select", onSlideChange);
 	}, [emblaApi]);
-	const [selectedIndex, setselectedIndex] = useState(0);
 	const scrollPrev = useCallback(
 		() => emblaApi && emblaApi.scrollPrev(),
 		[emblaApi]
@@ -25,7 +27,6 @@ const Testimonials = ({ testimonoal }) => {
 		[emblaApi]
 	);
 	const onSlideChange = useCallback(() => {
-		console.log("object");
 		setselectedIndex(emblaApi.selectedScrollSnap);
 	}, [emblaApi]);
 

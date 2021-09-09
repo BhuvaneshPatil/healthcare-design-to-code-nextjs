@@ -37,7 +37,6 @@ const Navbar = () => {
 					animationDuration={0.5}
 					onClick={() =>
 						setHindden((current) => {
-							console.log(current);
 							return !current;
 						})
 					}
