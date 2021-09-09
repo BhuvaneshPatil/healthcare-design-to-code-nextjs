@@ -36,7 +36,7 @@ const Testimonials = ({ testimonoal }) => {
 				{/* Image */}
 				<div style={{ flex: 1 }} className="row">
 					<div className={styles.avatar}>
-						<Image src={item.userImage} />
+						<Image src={item.userImage} alt="Health is Wealth" />
 					</div>
 					{/* Name */}
 					<div className={styles.userInfoUnit}>
@@ -46,7 +46,7 @@ const Testimonials = ({ testimonoal }) => {
 				</div>
 				{/* Text */}
 				<div className={`${styles.testimonialText}`}>
-					<p>" {item.reviewText} "</p>
+					<p>{`" ${item.reviewText} "`}</p>
 				</div>
 			</div>
 		);

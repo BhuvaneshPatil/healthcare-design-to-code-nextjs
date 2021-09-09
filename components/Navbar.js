@@ -10,7 +10,7 @@ const Navbar = () => {
 		<nav>
 			<div className={`${styles.navContainer} margin-on-side row`}>
 				{/* logo */}
-				<Image src={images.logo} />
+				<Image src={images.logo} alt="Health is Wealth" />
 				{/* nav-links */}
 				<ul className={`row ${styles.navLinks}`}>
 					<li

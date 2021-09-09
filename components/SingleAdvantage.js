@@ -7,7 +7,7 @@ const SingleAdvantage = ({ data, direction }) => {
 		<div className={`row aside ${direction}`} style={{ margin: "5rem 0" }}>
 			{/* Image side */}
 			<div className={styles.imageContainer}>
-				<Image src={data.image} />
+				<Image src={data.image} alt="Health is Wealth" />
 			</div>
 			<div className={styles.infoContainer}>
 				<h3 className={styles.heading}>{data.title}</h3>

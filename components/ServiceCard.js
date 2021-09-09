@@ -6,7 +6,7 @@ const ServiceCard = ({ service }) => {
 		<div className={styles.cardContainer}>
 			<div className={`${styles.imageContainer}`}>
 				<div>
-					<Image src={service.picture} />
+					<Image src={service.picture} alt="Health is Wealth" />
 				</div>
 			</div>
 			<h3 className={`${styles.cardHeading}`}>{service.title}</h3>

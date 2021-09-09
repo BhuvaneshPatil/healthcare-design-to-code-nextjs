@@ -3,12 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import * as styles from "../styles/ArticleCard.module.css";
 const ArticleCard = ({ data }) => {
-	console.log(data.picture.src);
 	return (
 		<div className={styles.cardContainer}>
 			{/* Image */}
 			<div className={styles.imageContainer}>
-				<Image src={data.picture} />
+				<Image src={data.picture} alt="Health is Wealth" />
 			</div>
 			{/* Info */}
 			<div className={`${styles.infoContainer}`}>
