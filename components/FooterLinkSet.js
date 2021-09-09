@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import * as styles from "../styles/Footer.module.css";
 const FooterLinkSet = ({ linkSet }) => {
 	return (
@@ -11,7 +12,7 @@ const FooterLinkSet = ({ linkSet }) => {
 						.map((item, index) => {
 							return (
 								<li key={index}>
-									<a href="/">{item}</a>
+									<Link href="/">{item}</Link>
 								</li>
 							);
 						})}
