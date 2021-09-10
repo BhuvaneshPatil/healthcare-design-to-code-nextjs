@@ -8,7 +8,7 @@ https://www.figma.com/file/EWmzcVkd7qbP5Nf7iMvuqP/Trafalgar-Landing-Page
 ## Previews
 <p>
     <img src="./public/assets/previews/phone.png" width="30%" />
-    <img src="./public/assets/previews/desktop.png" width="40%"/>
+    <img src="./public/assets/previews/desktop.png" width="60%"/>
 </p>
 
 
