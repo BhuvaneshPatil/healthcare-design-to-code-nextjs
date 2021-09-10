@@ -7,7 +7,7 @@ https://www.figma.com/file/EWmzcVkd7qbP5Nf7iMvuqP/Trafalgar-Landing-Page
 
 ## Previews
 
--   **Mobile** -
+-   **Mobile** 
     <img src="./public/assets/previews/phone.png" width="30%" />
 
 -   **Desktop**
