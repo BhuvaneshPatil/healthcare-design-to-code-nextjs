@@ -14,7 +14,7 @@ body,
 	box-sizing: border-box;
 	font-family: "Mulish", sans-serif;
 }
-body {
+html,body {
 	max-width: 100%;
 	overflow-x: hidden;
 }
